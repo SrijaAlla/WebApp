@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image:url("img1.jpg"); background-color:#cccccc;}
+form {border: 3px solid #ffffff;}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.but {
+	text-align:center;
+}
+button {
+  background-color: #4da6ff;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  text-align: center;
+  margin:auto;
+  width: 40%;
+  padding: 12px;
+  border-width:0px;
+  border-style:none;
+  border-radius:25px;
+}
+.login {
+  border-width:0px;
+  border-style:none;
+}
+.vid {
+  text-align: center;
+  margin:auto;
+}
+.info {
+     text-align:left;
+      }
+#input {
+   border-radius: 25px;
+   padding: 12px;
+   width:40%;
+   background-color:#4da6ff;
+   border:none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4da6ff;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+	</head>
+	<body>
+		<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Popular</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">TV-Shows</a>
+    <div class="dropdown-content">
+      <a href="#">English</a>
+      <a href="#">Korean</a>
+      <a href="#">Others</a>
+    </div>
+  </li>
+</ul>
+		<h1 align=center> Login</h1>
+		<div class =container>
+			<div class= "container-login">
+			 <form class=login method=post action=reg.php>
+
+				 <div class="info">		
+			         <label for="fname"><b>Fisrt Name:</b></label>
+				 <input type=text name=fname placeholder="First Name"/><br>
+				 <label for="lname"><b>Last Name:</b></label>
+				 <input type="text" name=lname placeholder="last name"/><br>
+				 <label for=email><b>Email id:</b></label>
+				 <input type=text name=email placeholder="Enter your email address"/><br>
+				 <label for="username"><b><span style="color:black">Username:</span></b><label>
+				 <input type="text" name=username placeholder="Type your username"/>
+				 <label for="passwd"><b>Password:</b></label>
+				 <input type=password name=password placeholder="Type your password"/>
+				 <br>
+				 </div>
+				 <br>
+				 <div class=but>
+					 <input type=submit id="input" value="Sign up"/>
+				 </div>
+			 </form>
+			</div>
+		</div>
+
+	</body>
+</html>
